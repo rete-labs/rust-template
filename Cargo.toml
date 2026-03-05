@@ -7,3 +7,4 @@ repository = "https://github.com/rete-labs/{{project-name}}"
 license = "MIT OR Apache-2.0"
 
 [dependencies]
+husky-rs = "0.3"
