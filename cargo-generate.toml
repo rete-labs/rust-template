@@ -1,0 +1,12 @@
+[template]
+cargo_generate_version = ">=0.23.0"
+
+[placeholders.project-description]
+type = "string"
+prompt = "Project description"
+
+[conditional.'crate_type == "lib"']
+ignore = [ "src/main.rs" ]
+
+[conditional.'crate_type == "bin"']
+ignore = [ "src/lib.rs" ]
